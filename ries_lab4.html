@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid rows</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Grid rows">
+  <meta name="keywords" content="How to use grid rows">
+  <meta name="author" content="Abigail Ries">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Abigail Ries -->
+<style>
+/* This is my CSS comment */
+           #container{
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+            #box_one{
+                flex: 1 0 250px;
+                height: 500px;
+                border: 3px solid black;
+            }
+            #box_two{
+                flex: 1 0 250px;
+                height: 500px;
+                border: 3px solid black;
+            }
+            #box_three{
+                flex: 1 0 250px;
+                height: 500px;
+                border: 3px solid black;
+            }
+            #box_four{
+                flex: 1 0 250px;
+                height: 500px;
+                border: 3px solid black;
+            }
+            h1{
+                font-family:arial;
+                font-weight: 900;
+                font-size: 2em;
+                text-align: center;
+                padding-top: 20%;
+                color: #333;
+            }
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: orange;
+	
+  }
+  @media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+}
+.grid-container {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 40px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  font-size: 80px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-row-gap Property</h1>
+// This is my Java Script comment
+
+<p>Use the <em>grid-row-gap</em> property to adjust the space between the rows:</p>
+
+<div class="grid-container">
+  <div class="grid-item">This</div>
+  <div class="grid-item">example</div>
+  <div class="grid-item">shows</div>  
+  <div class="grid-item">us</div>
+  <div class="grid-item">how</div>
+  <div class="grid-item">rows</div>  
+  <div class="grid-item">can</div>
+  <div class="grid-item">be </div>
+  <div class="grid-item">changed</div>  
+</div>
+
+</body>
+</html>
